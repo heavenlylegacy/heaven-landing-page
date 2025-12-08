@@ -1,196 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Heaven.org – Preserve Your Legacy</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- Tailwind via CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    /* Cinematic tweaks */
-    body {
-      background: radial-gradient(circle at top, #0f172a 0, #020617 45%, #020617 100%);
-      color: #e5e7eb;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    }
-    .glass {
-      background: rgba(15, 23, 42, 0.78);
-      border: 1px solid rgba(148, 163, 184, 0.3);
-      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.65);
-      backdrop-filter: blur(18px);
-    }
-    .orb {
-      background: radial-gradient(circle at 30% 20%, #fde68a, transparent 55%),
-                  radial-gradient(circle at 80% 80%, #38bdf8, transparent 55%);
-      opacity: 0.8;
-      filter: blur(4px);
-    }
-  </style>
-</head>
-<body class="min-h-screen flex items-center justify-center px-4 py-10">
-  <!-- Background orbs -->
-  <div class="fixed inset-0 -z-10 overflow-hidden">
-    <div class="orb absolute -top-32 -left-40 w-96 h-96 rounded-full"></div>
-    <div class="orb absolute bottom-[-8rem] right-[-6rem] w-[28rem] h-[28rem] rounded-full"></div>
-  </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Heaven.org – Preserve Your Legacy</title>
 
-  <main class="glass max-w-5xl w-full rounded-3xl px-6 sm:px-10 py-10 sm:py-12 relative">
-    <!-- subtle halo -->
-    <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-32 h-1 rounded-full bg-gradient-to-r from-amber-300 via-sky-300 to-amber-200 opacity-80"></div>
+    <!-- Tailwind via CDN for easy, nice styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Header / Hero -->
-    <header class="text-center space-y-6">
-      <p class="text-xs tracking-[0.25em] uppercase text-sky-300/80">
-        Heaven.org · Early Access
-      </p>
-      <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold text-slate-50 leading-tight">
-        Preserve your legacy.<br class="hidden sm:block" />
-        <span class="text-amber-300">Be remembered for generations.</span>
-      </h1>
-      <p class="max-w-2xl mx-auto text-sm sm:text-base text-slate-300/90">
-        Heaven.org helps you turn memories into living time-capsules that
-        <span class="font-medium text-amber-200">look like you, sound like you, and think like you</span> —
-        so your stories, values, and voice can live on for the people you love.
-      </p>
-    </header>
+    <meta
+      name="description"
+      content="Heaven.org is a timeless library of human stories, where you can preserve your legacy and let future generations sit with your story."
+    />
+  </head>
+  <body class="bg-slate-950 text-slate-100 flex flex-col min-h-screen">
+    <!-- HERO IMAGE -->
+    <section class="w-full bg-black">
+      <img
+        src="hero-heaven.png.png"
+        alt="An elder from the early 1900s sharing his life story with a young listener in a vast sky library while others come and go"
+        class="w-full max-h-[720px] object-cover object-center"
+      />
+    </section>
 
-    <!-- Hero CTA -->
-    <section class="mt-8 flex flex-col md:flex-row gap-8 md:gap-10 items-stretch md:items-start">
-      <!-- Left: Email form -->
-      <div class="md:w-1/2 space-y-4">
-        <h2 class="text-lg font-medium text-slate-100">
-          Join the Founding Circle
-        </h2>
-        <p class="text-sm text-slate-300">
-          Be one of the first to shape Heaven.org. Get early access, behind-the-scenes updates,
-          and an invitation to build your own legacy space.
-        </p>
+    <!-- MAIN CONTENT -->
+    <main
+      class="flex-1 w-full flex justify-center px-4 py-10 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900"
+    >
+      <div class="max-w-4xl w-full space-y-10">
+        <!-- Intro -->
+        <section class="space-y-4">
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight">
+            Heaven.org – A Home for Your Story
+          </h1>
+          <p class="text-slate-200 text-base sm:text-lg max-w-2xl">
+            Imagine a place between worlds – part library, part sky, part
+            memory – where anyone you love can sit with your story, hear your
+            voice, and feel like you’re right there with them. That’s what
+            we’re building with Heaven.org.
+          </p>
+        </section>
 
-        <form
-          class="mt-4 flex flex-col sm:flex-row gap-3"
-          action="https://formspree.io/f/your-form-id"
-          method="POST"
+        <!-- What it is -->
+        <section class="grid gap-6 md:grid-cols-2">
+          <div class="space-y-3">
+            <h2 class="text-xl font-semibold text-slate-50">
+              Why we’re building this
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base">
+              Our lives are full of stories, wisdom, humor, and small
+              moments that never make it into a formal obituary. Heaven.org
+              is a quiet, safe place to gather those moments and keep them
+              alive for the people who matter most.
+            </p>
+          </div>
+
+          <div class="space-y-2 text-sm sm:text-base text-slate-200">
+            <h3 class="font-semibold text-slate-50">
+              What Heaven.org will let you do
+            </h3>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Create a private or shareable “life library” in your own words.</li>
+              <li>Record stories, messages, and memories for your family.</li>
+              <li>
+                Choose whether your story is just for loved ones, or part of a
+                larger universe of inspiring lives.
+              </li>
+              <li>
+                Let future generations “sit at the table” with you – like in the
+                image above.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Early access / email capture placeholder -->
+        <section
+          id="join"
+          class="border border-slate-700/70 rounded-2xl bg-slate-900/60 backdrop-blur-sm px-5 py-6 sm:px-7 sm:py-7 space-y-4"
         >
-          <label class="sr-only" for="email">Email</label>
-          <input
-            id="email"
-            type="email"
-            name="email"
-            required
-            placeholder="you@example.com"
-            class="flex-1 rounded-xl border border-slate-500/60 bg-slate-900/40 px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-amber-300 focus:border-amber-300"
-          />
-          <button
-            type="submit"
-            class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-amber-400 via-amber-300 to-sky-300 px-5 py-3 text-sm font-semibold text-slate-900 shadow-lg shadow-amber-500/30 hover:shadow-amber-400/40 transition"
+          <h2 class="text-xl sm:text-2xl font-semibold text-slate-50">
+            Join the early circle
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base max-w-2xl">
+            We’re in the early stages of building Heaven.org. If you’d like to
+            reserve a spot, follow our progress, or help shape what this becomes,
+            leave your email and we’ll keep you in the loop as the story unfolds.
+          </p>
+
+          <!-- Simple email form (no backend yet – can hook to ConvertKit later) -->
+          <form
+            class="flex flex-col sm:flex-row gap-3"
+            action="mailto:john@heaven.org"
+            method="post"
+            enctype="text/plain"
           >
-            Join waitlist
-          </button>
-        </form>
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Your email address"
+              class="flex-1 rounded-xl bg-slate-900/80 border border-slate-600 px-3 py-2 text-sm sm:text-base outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+            />
+            <button
+              type="submit"
+              class="rounded-xl bg-amber-400 text-slate-900 font-semibold px-5 py-2 text-sm sm:text-base hover:bg-amber-300 transition-colors"
+            >
+              Count me in
+            </button>
+          </form>
 
-        <p class="text-xs text-slate-400 mt-1">
-          No spam. Just occasional updates as Heaven.org comes to life.
-        </p>
+          <p class="text-xs text-slate-400">
+            No spam. No sharing your address. Just occasional updates as
+            Heaven.org takes shape.
+          </p>
+        </section>
 
-        <p class="text-xs text-slate-400 mt-4">
-          Already <span class="font-semibold text-amber-200">over 1 year</span> of sign-ups
-          and conversations with families, creators, and memorial partners.
-          You’ll be in good company.
-        </p>
+        <!-- Vision -->
+        <section class="space-y-3 pb-4">
+          <h2 class="text-xl font-semibold text-slate-50">
+            A shared universe of human stories
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base max-w-3xl">
+            Some people will keep their Heaven.org space private – just for
+            family. Others may choose to open their story to the world, so
+            strangers can wander the shelves and discover lives that move them,
+            teach them, or simply make them smile. Our job is to hold those
+            stories with care, integrity, and respect.
+          </p>
+        </section>
       </div>
-
-      <!-- Right: Cinematic preview / features -->
-      <div class="md:w-1/2 space-y-4">
-        <div class="relative overflow-hidden rounded-2xl border border-slate-600/60 bg-slate-900/60 shadow-xl">
-          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/10 to-transparent pointer-events-none"></div>
-          <img
-            src="https://images.pexels.com/photos/1025469/pexels-photo-1025469.jpeg?auto=compress&cs=tinysrgb&w=1200"
-            alt="Serene digital heaven scene"
-            class="w-full h-52 sm:h-60 object-cover"
-          />
-          <div class="absolute bottom-4 left-4 right-4 text-left">
-            <p class="text-xs uppercase tracking-[0.2em] text-sky-200/90">
-              A glimpse of your Heaven space
-            </p>
-            <p class="mt-1 text-sm text-slate-100">
-              A calm, personal world where your stories, messages, and avatar live —
-              ready for your family to visit whenever they need you.
-            </p>
-          </div>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-          <div class="rounded-xl border border-slate-600/60 bg-slate-900/60 p-4 space-y-2">
-            <p class="text-xs font-semibold text-amber-300 uppercase tracking-wide">
-              AI Story Builder
-            </p>
-            <p class="text-slate-300">
-              Turn photos, letters, and memories into a beautifully written life story —
-              edited and approved by you.
-            </p>
-          </div>
-
-          <div class="rounded-xl border border-slate-600/60 bg-slate-900/60 p-4 space-y-2">
-            <p class="text-xs font-semibold text-sky-300 uppercase tracking-wide">
-              Living Time-Capsules
-            </p>
-            <p class="text-slate-300">
-              Schedule messages, stories, and advice to arrive for birthdays, milestones,
-              and moments your loved ones will never forget.
-            </p>
-          </div>
-
-          <div class="rounded-xl border border-slate-600/60 bg-slate-900/60 p-4 space-y-2">
-            <p class="text-xs font-semibold text-emerald-300 uppercase tracking-wide">
-              “Looks, Sounds, Thinks Like You”
-            </p>
-            <p class="text-slate-300">
-              Ethically trained AI avatars that echo your voice, values, and style —
-              always under your control.
-            </p>
-          </div>
-
-          <div class="rounded-xl border border-slate-600/60 bg-slate-900/60 p-4 space-y-2">
-            <p class="text-xs font-semibold text-fuchsia-300 uppercase tracking-wide">
-              Family Spaces
-            </p>
-            <p class="text-slate-300">
-              Private or shared spaces where family and friends can add stories, photos,
-              and memories to keep your presence alive.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Roadmap / Coming soon -->
-    <section class="mt-10 border-t border-slate-700/70 pt-6">
-      <h3 class="text-sm font-semibold text-slate-200 tracking-wide uppercase">
-        What’s coming to Heaven.org
-      </h3>
-      <div class="mt-3 grid gap-3 text-sm text-slate-300 sm:grid-cols-2">
-        <ul class="space-y-2">
-          <li>• Legacy Builder Wizard to guide you step-by-step</li>
-          <li>• Text and voice-based avatars for conversations after you’re gone</li>
-          <li>• Guided prompts to help you capture wisdom, not just events</li>
-        </ul>
-        <ul class="space-y-2">
-          <li>• Cultural & spiritual templates that honor different traditions</li>
-          <li>• Tools for families to co-create shared legacy spaces</li>
-          <li>• Ethical, consent-driven controls for your digital presence</li>
-        </ul>
-      </div>
-    </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="mt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
-      <p>© <span id="year"></span> Heaven.org · A place where stories never die.</p>
-      <p>Built with care by humans who believe memories matter.</p>
+    <footer class="w-full border-t border-slate-800/70 bg-slate-950 py-4">
+      <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs sm:text-sm text-slate-500">
+        <span>© <span id="year"></span> Heaven.org – a quiet place for stories that matter.</span>
+        <span>Built with care, still in early access.</span>
+      </div>
     </footer>
-  </main>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
-</body>
+    <script>
+      // Set current year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
