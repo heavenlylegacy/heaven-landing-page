@@ -2,13 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heaven.org – Preserve Your Legacy</title>
 
-    <!-- Tailwind via CDN for easy, nice styling -->
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <meta
@@ -16,89 +13,81 @@
       content="Heaven.org is a timeless library of human stories, where you can preserve your legacy and let future generations sit with your story."
     />
   </head>
+
   <body class="bg-slate-950 text-slate-100 flex flex-col min-h-screen">
-    <!-- HERO IMAGE -->
-<section class="relative w-full bg-black">
-  <img
-    src="hero-heaven.png.png"
-    alt="An elder from the early 1900s sharing his life story with a young listener in a vast sky library while others come and go"
-    class="w-full max-h-[620px] object-cover object-center"
-  />
 
-  <!-- subtle bottom fade for smoother transition into the content -->
-  <div class="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent to-slate-950"></div>
+    <!-- HERO -->
+    <section class="relative w-full bg-black overflow-hidden">
+      <img
+        src="hero-heaven.png.png"
+        alt="An elder sharing his life story with a young listener in a vast sky library"
+        class="w-full h-[70vh] min-h-[420px] max-h-[640px] object-cover object-center"
+      />
 
-  <!-- simple wordmark (not a full logo yet) -->
-  <div class="absolute top-5 left-6 text-slate-200/90 text-sm tracking-wider">
-    heaven.org
-  </div>
-</section>
+      <!-- Gradient fade -->
+      <div class="pointer-events-none absolute inset-x-0 bottom-0 h-48 bg-gradient-to-b from-transparent to-slate-950"></div>
 
-    <!-- MAIN CONTENT -->
-    <main
-      class="flex-1 w-full flex justify-center px-4 py-10 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900"
-    >
-      <div class="max-w-4xl w-full space-y-10">
-        
-        <!-- Intro -->
-        <section class="space-y-4">
-          <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight leading-tight">
-  Heaven.org — A Home for Your Story
-</h1>
+      <!-- Wordmark -->
+      <div class="absolute top-6 left-6 text-slate-200/90 text-sm tracking-widest uppercase">
+        heaven.org
+      </div>
+    </section>
 
-          <p class="text-slate-200 text-base sm:text-lg max-w-2xl">
-            Leave a beautiful and compelling legacy — for you or a loved one — 
-            a life story full of insight that may inspire, educate, or entertain 
-            generations to come.
+    <!-- CONTENT -->
+    <main class="flex-1 w-full flex justify-center px-4 pt-16 pb-12 bg-slate-950">
+      <div class="max-w-4xl w-full space-y-14">
+
+        <!-- Headline -->
+        <section class="space-y-6">
+          <h1 class="text-4xl sm:text-5xl font-semibold tracking-tight leading-tight">
+            Every life is a story worth preserving.
+          </h1>
+
+          <p class="text-slate-300 text-lg max-w-2xl">
+            Leave a beautiful and compelling legacy — for you or a loved one — a life story full
+            of insight that may inspire, educate, or comfort generations to come.
           </p>
         </section>
 
-        <!-- What it is -->
-        <section class="grid gap-6 md:grid-cols-2">
-          <div class="space-y-3">
-            <h2 class="text-xl font-semibold text-slate-50">
+        <!-- Why / What -->
+        <section class="grid gap-10 md:grid-cols-2">
+          <div class="space-y-4">
+            <h2 class="text-xl font-semibold text-slate-100">
               Why we’re building this
             </h2>
-            <p class="text-slate-300 text-sm sm:text-base">
-              Our lives are full of stories, wisdom, humor, and small
-              moments that never make it into a formal obituary. Heaven.org
-              is a quiet, safe place to gather those moments and keep them
-              alive for the people who matter most — or for future generations
-              who may one day draw inspiration from your journey.
+            <p class="text-slate-300 text-base">
+              Our lives are full of stories, wisdom, humor, and small moments that never make it
+              into a formal obituary. Heaven.org is a quiet, safe place to gather those moments and
+              keep them alive — for the people who matter most, and for future generations who may
+              one day wander the shelves.
             </p>
           </div>
 
-          <div class="space-y-2 text-sm sm:text-base text-slate-200">
-            <h3 class="font-semibold text-slate-50">
-              What Heaven.org will let you do
-            </h3>
-            <ul class="list-disc list-inside space-y-1">
-              <li>Create a private or shareable “life library” in your own words.</li>
-              <li>Record stories, messages, and memories for your family.</li>
-              <li>
-                Choose whether your story is just for loved ones, or part of a
-                larger universe of inspiring lives.
-              </li>
-              <li>
-                Let future generations “sit at the table” with you – like in the
-                image above.
-              </li>
+          <div class="space-y-4">
+            <h2 class="text-xl font-semibold text-slate-100">
+              What Heaven.org lets you do
+            </h2>
+            <ul class="list-disc list-inside space-y-2 text-slate-300">
+              <li>Create a private or shareable life library in your own words</li>
+              <li>Record stories, messages, and memories for family</li>
+              <li>Choose privacy, openness, or something in between</li>
+              <li>Let future generations “sit at the table” with you</li>
             </ul>
           </div>
         </section>
 
-        <!-- Early access / email capture -->
+        <!-- Early Access -->
         <section
           id="join"
-          class="border border-slate-700/70 rounded-2xl bg-slate-900/60 backdrop-blur-sm px-5 py-6 sm:px-7 sm:py-7 space-y-4"
+          class="border border-slate-700/60 rounded-2xl bg-slate-900/60 px-6 py-7 space-y-5"
         >
-          <h2 class="text-xl sm:text-2xl font-semibold text-slate-50">
+          <h2 class="text-2xl font-semibold text-slate-100">
             Join the early circle
           </h2>
-          <p class="text-slate-300 text-sm sm:text-base max-w-2xl">
-            We’re in the early stages of building Heaven.org. If you’d like to
-            reserve a spot, follow our progress, or help shape what this becomes,
-            leave your email and we’ll keep you in the loop as the story unfolds.
+
+          <p class="text-slate-300 max-w-2xl">
+            Heaven.org is just beginning. If you’d like to follow along, help shape what this
+            becomes, or reserve a place for a story that matters to you, leave your email below.
           </p>
 
           <form
@@ -112,50 +101,46 @@
               name="email"
               required
               placeholder="Your email address"
-              class="flex-1 rounded-xl bg-slate-900/80 border border-slate-600 px-3 py-2 text-sm sm:text-base outline-none focus:ring-2 focus:ring-amber-400 focus:border-amber-400"
+              class="flex-1 rounded-xl bg-slate-900 border border-slate-600 px-4 py-2 text-base outline-none focus:ring-2 focus:ring-amber-400"
             />
             <button
               type="submit"
-              class="rounded-xl bg-amber-400 text-slate-900 font-semibold px-5 py-2 text-sm sm:text-base hover:bg-amber-300 transition-colors"
+              class="rounded-xl bg-amber-400 text-slate-900 font-semibold px-6 py-2 hover:bg-amber-300 transition"
             >
               Count me in
             </button>
           </form>
 
           <p class="text-xs text-slate-400">
-            No spam. No sharing your address. Just occasional updates as
-            Heaven.org takes shape.
+            No spam. No selling your address. Just thoughtful updates.
           </p>
         </section>
 
         <!-- Vision -->
-        <section class="space-y-3 pb-4">
-          <h2 class="text-xl font-semibold text-slate-50">
+        <section class="space-y-4">
+          <h2 class="text-xl font-semibold text-slate-100">
             A shared universe of human stories
           </h2>
-          <p class="text-slate-300 text-sm sm:text-base max-w-3xl">
-            Some people will keep their Heaven.org space private – just for
-            family. Others may choose to open their story to the world, so
-            strangers can wander the shelves and discover lives that move them,
-            teach them, or simply make them smile. Our job is to hold those
-            stories with care, integrity, and respect.
+          <p class="text-slate-300 max-w-3xl">
+            Some stories will remain private, held closely by family. Others may be opened to the
+            world — allowing strangers to wander, listen, and learn. Heaven.org exists to hold
+            those stories with care, dignity, and respect.
           </p>
         </section>
+
       </div>
     </main>
 
     <!-- Footer -->
-    <footer class="w-full border-t border-slate-800/70 bg-slate-950 py-4">
-      <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs sm:text-sm text-slate-500">
-        <span>© <span id="year"></span> Heaven.org – a quiet place for stories that matter.</span>
-        <span>Built with care, still in early access.</span>
+    <footer class="border-t border-slate-800 bg-slate-950 py-4">
+      <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row justify-between gap-2 text-sm text-slate-500">
+        <span>© <span id="year"></span> Heaven.org</span>
+        <span>Built slowly, with care.</span>
       </div>
     </footer>
 
     <script>
-      // Set current year in footer
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
-
